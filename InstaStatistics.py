@@ -82,7 +82,7 @@ class IGBot:
 
 def print_separation_line():
     print("------------------------------------------------------------------------"
-          "-------------------------------------------------------")
+          "--------------------------------------")
 
 
 # this method returns the differences between list1 and list2
