@@ -15,8 +15,8 @@ InstaStatistics helps you to discover the Instagram's accounts that started/stop
 
 ## Info
 
-Estimated time of the informations recovery's operations is, more or less, calculable by the following formula:
-  * (((number of followers + number of following) / 10) * 1,5) + 10 (seconds)
+Estimated time of the informations recovery's operations is, more or less, calculable (in seconds) by the following formula:
+  * (((number of followers + number of following) / 10) * 1,5) + 10    
 
 
 ## Requirements
