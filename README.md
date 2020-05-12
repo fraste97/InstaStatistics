@@ -4,7 +4,7 @@ InstaStatistics helps you to discover the Instagram's accounts that started/stop
 
 ## How to install it
 
-1. [Download](https://github.com/fraste97/InstaStatistics/raw/master/InstaStatistics.zip) the InstaStatistics.zip file
+1. [Download](https://github.com/fraste97/InstaStatistics/releases/download/v1.0/InstaStatistics.zip) the InstaStatistics.zip file
 1. Unzip it
 
 ## How to use it
