@@ -21,14 +21,14 @@ class IGBot:
         self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/header/section/ul/li[2]/a").click()
         # it inserts username
         self.driver.find_element_by_xpath(
-            "/html/body/div[5]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div/label/input").send_keys(
+            "/html/body/div[5]/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div/label/input").send_keys(
             user_name)
         # it inserts password
         self.driver.find_element_by_xpath(
-            "/html/body/div[5]/div/div[2]/div[2]/div/div/div[1]/div/form/div[3]/div/label/input").send_keys(password)
+            "/html/body/div[5]/div[2]/div[2]/div/div/div[1]/div/form/div[3]/div/label/input").send_keys(password)
         # it presses the login button
         self.driver.find_element_by_xpath(
-            "/html/body/div[5]/div/div[2]/div[2]/div/div/div[1]/div/form/div[4]/button/div").click()
+            "/html/body/div[5]/div[2]/div[2]/div/div/div[1]/div/form/div[4]/button").click()
 
         sleep(4)
 
