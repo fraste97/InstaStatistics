@@ -148,8 +148,8 @@ def print_list(list_to_print):
 # this method prints a list with a message at the end
 # if the list is empty, it prints another message
 def print_list_with_messages(list_to_print, msg_after_list, msg_after_empty_list):
-    print_list(list_to_print)
     print_conditioned_message(list_to_print, msg_after_list, msg_after_empty_list)
+    print_list(list_to_print)
     print_separation_line()
 
 
@@ -184,6 +184,7 @@ def log_routine(unfollowers_list, new_followers_list):
 
 
 # the beginning of the program
+
 # username and psw are requested
 username = input("Insert your Instagram username, phone number or e-mail: ")
 psw = input("Insert your Instagram password: ")
@@ -218,15 +219,15 @@ if old_follower_backup_file:
     old_follower_backup_list = old_follower_backup_file.readlines()
 
     unfollower_list = differences_between_lists(old_follower_backup_list, follower_list)
-    print_list_with_messages(unfollower_list, "UNFOLLOWED YOU!", "NO ONE UNFOLLOWED YOU!")
+    print_list_with_messages(unfollower_list, "ACCOUNTS THAT UNFOLLOWED YOU:", "NO ONE UNFOLLOWED YOU!")
 
     new_follower_list = differences_between_lists(follower_list, old_follower_backup_list)
-    print_list_with_messages(new_follower_list, "STARTED FOLLOWING YOU!", "YOU HAVEN'T NEW FOLLOWERS!")
+    print_list_with_messages(new_follower_list, "ACCOUNTS THAT STARTED FOLLOWING YOU:", "YOU HAVEN'T NEW FOLLOWERS!")
 
     old_follower_backup_file.close()
 
 no_follow_back = differences_between_lists(following_list, follower_list)
-print_list_with_messages(no_follow_back, "DON'T FOLLOW YOU BACK!", "ALL THE PEOPLE THAT YOU ARE FOLLOWING FOLLOW "
+print_list_with_messages(no_follow_back, "ACCOUNTS THAT DON'T FOLLOW YOU BACK:", "ALL THE PEOPLE THAT YOU ARE FOLLOWING FOLLOW "
                                                                    "YOU BACK!")
 
 # if there are: new followers or unfollowers the log routine is executed
