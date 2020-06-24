@@ -6,13 +6,18 @@ InstaStatistics helps you to discover the Instagram's accounts that started/stop
 
 1. [Download](https://github.com/fraste97/InstaStatistics/releases/download/v1.0/InstaStatistics.zip) the InstaStatistics.zip file
 1. Unzip it
-1. Run "InstaStatistics.exe"
 
 ## How to use it
 
 1. Run the program
 1. Insert your Instagram's username and password
 1. Hands up and wait for the results  
+
+## Info
+
+Estimated time of the informations recovery's operations is, more or less, calculable (in seconds) by the following formula:
+  * (((number of followers + number of following) / 10) * 1,5) + 10    
+
 
 ## Requirements
 
