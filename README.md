@@ -18,9 +18,8 @@ InstaStatistics helps you to discover the Instagram's accounts that started/stop
     ```bash
     pip install selenium
     ```
-* Firefox browser ([Download](https://www.mozilla.org/it/firefox/new/))
+* [Firefox browser](https://www.mozilla.org/it/firefox/new/)
 * An Instagram account
-* Windows 10
 
 ## Warning
 
@@ -28,4 +27,4 @@ The entire responsibility for the use of this program is entirely on you.
 
 ## Notes
 
-That's my **first ever** Python project.
+Be gentle, that's my **first ever** Python project.
