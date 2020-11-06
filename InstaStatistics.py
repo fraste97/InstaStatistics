@@ -17,6 +17,9 @@ class IGBot:
 
         sleep(1)
 
+        #cookies
+        self.driver.find_element_by_xpath("/html/body/div[2]/div/div/div/div[2]/button[1]").click()
+
         # login operation
         self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/header/section/ul/li[2]/a").click()
         # it inserts username
@@ -44,7 +47,7 @@ class IGBot:
     def logout(self):
         self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/header/section/div[1]/div/button").click()
         sleep(1)
-        self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div/div/button[9]").click()
+        self.driver.find_element_by_xpath("/html/body/div[5]/div/div/div/div/button[9]").click()
         sleep(1)
 
     # it closes the WebDriver connection
@@ -65,7 +68,7 @@ class IGBot:
         self.driver.find_element_by_xpath(xpath).click()
         sleep(1)
         # find the scroll box
-        scroll_box = self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div[2]")
+        scroll_box = self.driver.find_element_by_xpath("/html/body/div[5]/div/div/div[2]")
         # saves the initial scroll box's height
         last_height = self.driver.execute_script("return arguments[0].scrollHeight;", scroll_box)
 
@@ -96,7 +99,7 @@ class IGBot:
         for user_name in web_elements_list:
             username_list.append(user_name.text + "\n")
         # closes the scrollbox
-        self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div[1]/div/div[2]/button").click()
+        self.driver.find_element_by_xpath("/html/body/div[5]/div/div/div[1]/div/div[2]/button").click()
 
         return username_list
 
